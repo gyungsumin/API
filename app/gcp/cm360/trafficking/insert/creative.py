@@ -19,7 +19,7 @@ if __name__ == '__main__':
     from auth.gcp import platform_info
 
     service = service(credential_json=GCP_CM360_CREDENTIAL_JSON, credential_dat=GCP_CM360_CREDENTIAL_DAT,
-                      api_name='dfareporting', api_version='v3.5',
+                      api_name='dfareporting', api_version='v4',
                       api_scope='https://www.googleapis.com/auth/dfatrafficking')
 
     tracking(service=service,
